@@ -4,5 +4,12 @@
     "manifest_version": 3,
     "chrome_url_overrides": {
         "newtab": "redirect.html"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "description": "ändrar bakgrundsbilder",
+    "browser_action": {
+        "default_title": "Bakgrundsbilder google"
     }
 }
