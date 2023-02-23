@@ -11,5 +11,20 @@
     "description": "ändrar bakgrundsbilder",
     "browser_action": {
         "default_title": "Bakgrundsbilder google"
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.google.com/webhp*",
+                "*://*.google.com/",
+                "*://*.google.com/?*",
+                "*://*.google.se/webhp*",
+                "*://*.google.se/",
+                "*://*.google.se/?*"
+            ],
+            "js": [
+                "styles.js"
+            ]
+        }
+    ]
 }
